@@ -23,7 +23,7 @@
 #set page(numbering: "1", number-align: right)
 #set heading(numbering: "1.")
 
-= Introdução
+#include "introduction.typ"
 
 = Metodologia
 
