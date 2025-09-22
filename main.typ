@@ -13,7 +13,7 @@
 
 #set page(paper: "a4", margin: (top: 3cm, left: 3cm, bottom: 2cm, right: 2cm))
 #set text(font: "Arial", size: 12pt)
-#set par(justify: true, spacing: 1.5cm)
+#set par(justify: true)
 
 #align(center)[
   = #lorem(10)
@@ -31,16 +31,16 @@
 
 #pagebreak()
 
+#include "abstract.typ"
+
 #pagebreak()
 
 #set page(numbering: "1", number-align: right)
 #set heading(numbering: "1.")
 
 #include "introduction.typ"
+#include "foundation.typ"
 
-= Metodologia
-
-= Conclusão
+#pagebreak()
 
 #bibliography("./works.yml", full: true, title: "Bibliografia", style: "associacao-brasileira-de-normas-tecnicas")
-
