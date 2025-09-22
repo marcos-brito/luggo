@@ -1,7 +1,12 @@
 #set document(
   title: "",
   description: "",
-  author: "Marcos Brito",
+  author: (
+    "Marcos Brito",
+    "Giovanna Barbosa",
+    "Thiago Correa",
+    "Luciano Gonçalves"
+  ),
   keywords: (),
   date: datetime(day: 8, month: 8, year: 2025),
 )
@@ -10,13 +15,21 @@
 #set text(font: "Arial", size: 12pt)
 #set par(justify: true, spacing: 1.5cm)
 
-= Resumo
+#align(center)[
+  = #lorem(10)
 
-#lorem(100)
+  #upper[
+    Marcos Henrique Pereira de Brito
 
-= Resumo
+    Thiago Correa do Espírito Santo
 
-#lorem(100)
+    Giovanna Augusto Barbosa
+
+    Luciano Gonçalves De Carvalho
+  ]
+]
+
+#pagebreak()
 
 #pagebreak()
 
