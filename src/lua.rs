@@ -32,8 +32,17 @@ impl Runtime {
     }
 }
 
-
 fn say_hi(_: &Lua, name: String) -> LuaResult<()> {
     super::say_hi(&name);
+    Ok(())
+}
+
+pub fn main() -> Result<()> {
+    let runtime = Runtime::new();
+    let module = env!("LUA_MODULE_PATH");
+
+    runtime.init()?;
+    runtime.exec_file(module)?;
+
     Ok(())
 }

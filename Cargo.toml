@@ -3,6 +3,11 @@ name = "luggo"
 version = "0.1.0"
 edition = "2024"
 
+[features]
+lua = ["mlua/lua54"]
+luajit = ["mlua/luajit"]
+
 [dependencies]
+cfg-if = "1.0"
 anyhow = "1.0.100"
-mlua = { version = "0.11.3", features = ["lua54", "error-send"] }
+mlua = { version = "0.11.3", optional = true, features = ["error-send"] }
