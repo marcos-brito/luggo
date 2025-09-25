@@ -3,13 +3,21 @@ name = "luggo"
 version = "0.1.0"
 edition = "2024"
 
+[[bench]]
+name = "bench"
+harness = false
+
 [features]
 lua = ["mlua/lua54"]
 luajit = ["mlua/luajit"]
 wasm = ["wasmtime"]
 
 [dependencies]
-cfg-if = "1.0"
 anyhow = "1.0.100"
 mlua = { version = "0.11.3", optional = true, features = ["error-send"] }
 wasmtime = { version = "37.0.0", optional = true }
+
+[dev-dependencies]
+# pprof does not work with 0.7 yet. Wait for https://github.com/tikv/pprof-rs/pull/277
+criterion = "0.5.1"
+pprof = { version = "0.15.0", features = ["flamegraph", "criterion"] }
