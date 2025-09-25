@@ -11,6 +11,8 @@ harness = false
 lua = ["mlua/lua54"]
 luajit = ["mlua/luajit"]
 wasm = ["wasmtime"]
+grpc = []
+capnproto = []
 
 [dependencies]
 anyhow = "1.0.100"

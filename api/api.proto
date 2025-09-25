@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package pluginapi;
+
+message SayHiRequest { string name = 1; }
+
+message SayHiReply {}
+
+service PluginApi { rpc sayHi(SayHiRequest) returns (SayHiReply); }
