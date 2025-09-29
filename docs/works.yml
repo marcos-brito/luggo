@@ -1,7 +1,64 @@
-harry:
-    type: Book
-    title: Harry Potter and the Order of the Phoenix
-    author: Rowling, J. K.
-    volume: 5
-    page-total: 768
-    date: 2003-06-21
+wasmtime-docs:
+  type: reference
+  title: Wasmtime's documentation
+  organization: Bytecode Alliance
+  language: en
+  url:
+    value: https://docs.wasmtime.dev/
+    date: 2025-09-27
+
+wasm-spec:
+  type: reference
+  title: WebAssembly Specification
+  organization: WebAssembly Community Group
+  language: en
+  url:
+    value: https://webassembly.github.io/spec/core/intro/introduction.html
+    date: 2025-09-29
+
+wasi-docs:
+  type: reference
+  title: WASI's documentation
+  organization: Bytecode Alliance
+  language: en
+  url:
+    value: https://wasi.dev/
+    date: 2025-09-29
+
+modern-OSs:
+  type: book
+  title: Modern Operating Systems
+  publisher: Prentice Hall
+  edition: 4
+  serial-number:
+    isbn: 978-0-13-359162-0
+  author:
+    - Andrew S. Tanenbaum
+    - Herbert Bos
+  language: en
+  date: 2014-03-20
+  page-total: 1136
+
+programming-in-lua:
+  type: book
+  title: Programming in Lua
+  publisher: Lua.Org
+  edition: 4
+  serial-number:
+    isbn: 978-8590379867
+  author: Roberto Ierusalimschy
+  language: en
+  date: 2016-08-01
+  page-total: 388
+
+lua-reference:
+  type: reference
+  title: "Lua 5.1 Reference Manual"
+  author:
+    - Roberto Ierusalimschy
+    - Luiz Henrique de Figueiredo
+    - Waldemar Celes
+  language: en
+  url:
+    value: https://www.lua.org/manual/5.1/manual.html
+    date: 2025-09-29
